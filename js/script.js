@@ -1,29 +1,7 @@
-// let clicked = false;
-// let boxes={
-//   bx1:"",  bx2:"",  bx3:"",
-//   bx4:"",  bx5:"",  bx6:"",
-//   bx7:"",  bx8:"",  bx9:"",
-// }
 
-// let players ={
-//   firstPlayer:X,
-//   secondPlayer:O
-// };
-
-// function player(p){
-//   let p
-//   if(p==="O"){
-// p=""
-// return p
-//   }
-//   }
 
 
 $(document).ready(function(){
- // const tile = Array.from(" .array-box");
- // const annoucer =  $("#winner").val();
- // const player = $(".display-player").val();
-
     const tiles = Array.from($('.array-box'));
     const playerDisplay = document.querySelector('.display-player');
     const resetButton = document.querySelector('#reset');
@@ -95,16 +73,15 @@ $(document).ready(function(){
             return false;
         }
         if(tile.innerText === 'O'){
-            $('div').css('color', 'green');
             return false;
         }
 
         return true;
     };
     // ||
-    // const updateBoard = function (index)  {
-    //     board[index] = currentPlayer;
-    // }
+    const updateBoard = function (index)  {
+        board[index] = currentPlayer;
+    }
 
     const changePlayer =function ()  {
         playerDisplay.classList.remove(`player${currentPlayer}`);
@@ -149,23 +126,3 @@ $(document).ready(function(){
 
 
 
-// if(player.innerText==="X"){
-//   for (let i = 0; i <= 9
-//     ; i++) {
-
-//     let id = "bx" + i;
-//     let display = document.getElementById(id)
-//   display.innerText = "X";
-//   player.innerText="O's";
-//   console.log("TRUE");
-// }
-//}
-
-// else{
-//   for(let i=0; i<=9; i++){
-
-//   let id= "bx" + i;
-//   let display = document.getElementById(id);
-//   display.innerText = "O";
-
-//   }}
