@@ -102,9 +102,9 @@ $(document).ready(function(){
         return true;
     };
     // ||
-    const updateBoard = function (index)  {
-        board[index] = currentPlayer;
-    }
+    // const updateBoard = function (index)  {
+    //     board[index] = currentPlayer;
+    // }
 
     const changePlayer =function ()  {
         playerDisplay.classList.remove(`player${currentPlayer}`);
@@ -140,7 +140,7 @@ $(document).ready(function(){
     }
 
     tiles.forEach( function (tile, index)  {
-        // tile.addEventListener('click', () => userAction(tile, index));
+        tile.addEventListener('click', () => userAction(tile, index));
     });
 
     resetButton.addEventListener('click', resetBoard);
