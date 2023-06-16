@@ -1,0 +1,90 @@
+body{
+  background: linear-gradient(140deg, rgb(248, 228, 190) 73%,orange 60%);
+  /* background:linear-gradient(to right,rgb(248, 228, 190),orange); */
+  background-repeat: no-repeat;
+background-size: cover;
+height: 38rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.O{
+  color: aliceblue;
+}
+#toe{
+  text-align: center;
+}
+.board{
+  /* border-style: groove; */
+  height:26.5rem;
+  width:24rem ;
+  margin-left:32%;
+  /* border-radius: 15px; */
+}
+.first{
+  display: flex;
+}
+.first div{
+  height:102px;
+  width:100px ;
+ border-style: groove;
+ background-color: antiquewhite;
+ text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 15px;
+margin-left: 2px;
+}
+.second{
+  display: flex;
+}
+.second div{
+  height:102px;
+  width:100px ;
+  border-style: groove;
+  background-color: antiquewhite;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 15px;
+  margin-left: 2px;
+  margin-top: 2px;
+ }
+.third{
+  display: flex;
+}
+.third div{
+  height:102px;
+  width:100px ;
+  border-style: groove;
+  background-color: antiquewhite;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 15px;
+  margin-left: 2px;
+  margin-top: 2px;
+ }
+ .turns{
+  margin-left: 40%;
+ }
+ #winner{
+  text-align: center;
+margin-top: -14.6%;
+ }
+ .select-player{
+margin-left:34rem;
+ }
+ 
+ .select-player .form-control{
+  width: 17rem;
+ }
+ #reset{
+  text-align: center;
+margin-left: 43%;
+margin-top: 1.5%;
+width:120px;
+height:40px;
+font-size: x-large;
+ }
+
+
