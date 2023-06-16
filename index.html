@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/script.js"></script>
+  <title>TIC TAC TOE</title>
+</head>
+<body>
+<h1 id="toe">TIC TAC TOE</h1><br><br>
+
+<!-- <div class="select-player">
+  <h3 id="select-header">Select Your Player</h3><br>
+<form id="choose">
+<label for="player">
+  <div class="form-group">
+  <select name="player" id="player" class="form-control">
+    <option value="X">Select Player</option>
+    <option value="X">X</option>
+    <option value="O">O</option>
+  </select>
+</label>
+</div><br>
+  <button type="submit" class="btn btn-dark">Start</button>
+</form>
+</div> -->
+
+
+
+
+
+  <div class="container">
+    <!-- <p>player: <span id="me"></span> </p> -->
+  <h4 class="turns"> Player <span class="display-player playerX">X</span>'s turn</h4>
+<div class="board">
+  <div class="first">  
+<div class="row1 array-box" id="bx1" ></div>
+<div class="row1 array-box" id="bx2" ></div>
+<div class="row1 array-box" id="bx3" ></div>
+</div>
+
+<div class="second">  
+  <div class="row2 array-box" id="bx4"></div>
+  <div class="row2 array-box" id="bx5"></div>
+  <div class="row2 array-box" id="bx6"></div>
+  </div>
+
+  <div class="third">  
+    <div class="row3 array-box" id="bx7"></div>
+    <div class="row3 array-box" id="bx8"></div>
+    <div class="row3 array-box" id="bx9"></div>
+    </div>
+</div><br><br>
+
+<h4 id="winner" class="win"></h4>
+<button id="reset" class="btn btn-dark">Reset</button>
+  </div>
+</body>
+</html>
