@@ -1,4 +1,4 @@
-sa# _TIC-TAC-TOE_
+<!-- sa# _TIC-TAC-TOE_
 
 #### _{This application is a popular game also known as X and O}_
 
@@ -36,4 +36,4 @@ _{MIT}_
 
 ## Contact Information
 
-_{07081714922}}_
+_{07081714922}}_ -->
