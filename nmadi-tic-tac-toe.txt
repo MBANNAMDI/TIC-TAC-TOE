@@ -1,0 +1,56 @@
+
+The code starts by selecting the necessary elements from the DOM, such as the tiles, player display, reset button, and announcer.
+
+It initializes the game variables, including the game board represented as an array, the current player ('X' or 'O'), and a flag indicating whether the game is still active.
+
+The code defines three constants for different game outcomes: PLAYERX_WON, PLAYERO_WON, and TIE.
+
+The winningConditions array contains arrays representing the winning combinations of board indexes.
+
+The handleResultValidation function checks if any player has won the game or if it's a tie by iterating through the winning conditions and comparing the board values. If a win condition is met, the corresponding player is announced as the winner, and the game is no longer active. If there are no empty spaces left on the board, it's declared a tie.
+
+The announce function updates the announcer element based on the game outcome (player win or tie).
+
+The isValidAction function checks if a tile is a valid move by ensuring it is not already marked with 'X' or 'O'.
+
+The updateBoard function updates the board array with the current player's symbol ('X' or 'O') at the specified index.
+
+The changePlayer function toggles the current player between 'X' and 'O' and updates the player display accordingly.
+
+The userAction function is called when a player clicks on a tile. It checks if the move is valid and the game is still active before updating the tile, the board, and checking for a win or tie. It then changes the player for the next turn.
+
+The resetBoard function resets the game state by clearing the board array, re-enabling the game, hiding the announcer, and resetting the tiles and player display.
+
+The code adds event listeners to each tile, so when a tile is clicked, the userAction function is called with the tile and its index as arguments.
+
+It also adds an event listener to the reset button, triggering the resetBoard function when clicked.
+
+Overall, this code sets up the game logic for a Tic-Tac-Toe game and handles the interaction between the players and the game board.
+
+
+
+
+
+
+
+
+
+Sure! Let's go through each function in the provided code and explain its purpose and functionality:
+
+handleResultValidation(): This function is responsible for checking if the game has been won or if it's a tie. It iterates through the winningConditions array and compares the board values at the specified indexes. If a win condition is met, the roundWon variable is set to true, and the function breaks out of the loop. If there is a win, it calls the announce() function with the corresponding win type (PLAYERX_WON or PLAYERO_WON) and sets isGameActive to false. If there is a tie (no empty spaces left on the board), it calls announce() with the TIE type.
+
+announce(type): This function updates the announcer element in the DOM based on the game outcome. It takes a type argument that represents the outcome (PLAYERX_WON, PLAYERO_WON, or TIE). It updates the announcer element's innerHTML or innerText with the appropriate message, highlighting the winning player's symbol using a span element and the respective CSS class. Finally, it removes the 'hide' class from the announcer element to make it visible.
+
+isValidAction(tile): This function checks if a tile is a valid move by verifying that it is not already marked with 'X' or 'O'. It takes a tile argument representing a DOM element. If the innerText of the tile is 'X' or 'O', indicating that it has already been marked, the function returns false. Otherwise, it returns true.
+
+updateBoard(index): This function updates the board array with the current player's symbol ('X' or 'O') at the specified index. It takes an index argument representing the index in the board array to be updated. It sets the value at the specified index in the board array to the value of the currentPlayer variable.
+
+changePlayer(): This function toggles the current player between 'X' and 'O' and updates the player display accordingly. It starts by removing the CSS class corresponding to the current player from the playerDisplay element. Then it updates the currentPlayer variable to the opposite symbol ('X' if the current player is 'O', and vice versa). Next, it updates the playerDisplay element's innerText to the new currentPlayer value. Finally, it adds the CSS class corresponding to the new currentPlayer to the playerDisplay element.
+
+userAction(tile, index): This function is called when a player clicks on a tile. It takes two arguments: tile, representing the clicked DOM element, and index, representing the index of the tile in the board array. First, it checks if the move is valid and the game is still active by calling the isValidAction() function and checking the isGameActive variable. If the move is valid, it marks the tile with the current player's symbol, updates the board array using the updateBoard() function, checks for a win or tie using the handleResultValidation() function, and changes the player for the next turn using the changePlayer() function.
+
+resetBoard(): This function is called when the reset button is clicked. It resets the game state by clearing the board array, setting isGameActive to true, hiding the announcer element, and resetting the tiles and player display. It iterates through each tile using the forEach() method and clears the innerText, removes the 'playerX' and 'playerO' CSS
+
+
+
+
