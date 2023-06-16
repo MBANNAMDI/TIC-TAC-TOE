@@ -55,13 +55,13 @@ $(document).ready(function(){
             const a = board[winCondition[0]];
             const b = board[winCondition[1]];
             const c = board[winCondition[2]];
-            // if (a === '' || b === '' || c === '') {
-            //     continue;
-            // }
-            // if (a === b && b === c) {
-            //     roundWon = true;
-            //     break;
-            // }
+            if (a === '' || b === '' || c === '') {
+                continue;
+            }
+            if (a === b && b === c) {
+                roundWon = true;
+                break;
+            }
         }
 
     if (roundWon) {
