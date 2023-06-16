@@ -140,7 +140,7 @@ $(document).ready(function(){
     }
 
     tiles.forEach( function (tile, index)  {
-        tile.addEventListener('click', () => userAction(tile, index));
+        // tile.addEventListener('click', () => userAction(tile, index));
     });
 
     resetButton.addEventListener('click', resetBoard);
